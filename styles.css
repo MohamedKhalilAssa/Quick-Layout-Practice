@@ -1,0 +1,75 @@
+* {
+    margin: 0 ;
+    padding:0;
+    box-sizing: border-box;
+}
+.page{
+    min-height: 100vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 9vh 1fr 9vh;
+    grid-template-areas: "head head head"
+                         "navigation main ads"
+                         "footer    footer footer";
+}
+header{
+    grid-area:head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    border: 1px solid black;
+    background-color: lightgreen;
+}
+ header .logo{
+    font-size: 2rem;
+ }
+nav{
+    margin-right: 3rem;
+}
+nav li{
+    display: inline-block;
+    margin :1rem;
+    font-size : 1.5rem;
+}
+.navigation {
+    grid-area: navigation ;
+    border: 1px solid black;
+    background-color: lightblue;
+    padding:2rem;
+}
+.navigation h1{
+    font-size: 2rem;
+    text-align: center;
+}
+main {
+    grid-area: main ;
+    border: 1px solid black;
+    padding :1rem;
+    background-color: beige ;
+}
+main h2 {
+    font-size : 3rem;
+}
+main p {
+    font-size :1.5rem;
+    line-height: 3rem;
+}
+.ads {
+    grid-area: ads ;
+    border: 1px solid black;
+    background-color: lightpink;
+    padding:2rem;
+}
+.ads h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+footer{
+    grid-area: footer ;
+    border: 1px solid black;
+    background-color: lightgrey;
+    font-size: 2rem;
+    text-align: center;
+}
